@@ -57,4 +57,3 @@ const displayVideos =(videos)=>{
     })
 }
 loadCategories();
-loadVideos();

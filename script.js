@@ -45,7 +45,7 @@ const loadCategoryVideos = (id) => {
             console.log(clickedButton);
             removeActiveClass();
             clickedButton.classList.add('active')
-            displayVideos(data.videos); // ✅ use videos array
+            displayVideos(data.category); // ✅ use videos array
         });
 }; // ✅ function properly closed
 
@@ -98,6 +98,7 @@ if(videos.length===0){
                 <p>${video.others.views}</p>
            </div>
         </div>
+        
         </div>
         `;
     videoContainer.append(videoDiv)

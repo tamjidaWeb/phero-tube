@@ -120,8 +120,10 @@ if(videos.length===0){
            </div>
            <div class="intro">
                 <h2 class="text-sm font-semibold">Midnight Serenade</h2>
-                <p class="text-gray-400 text-sm flex gap-2">${video.authors[0].profile_name}
-                    <img class="h-5 w-5" src="https://img.icons8.com/?size=48&id=98A4yZTt9abw&format=png" alt="">
+                 <p class="text-gray-400 text-sm flex gap-2">
+                    ${video.authors[0].profile_name}
+                        ${video.authors[0].verified==true ? `<img class="h-5 w-5" src="https://img.icons8.com/?size=48&id=98A4yZTt9abw&format=png"
+                             alt="">` : ``}
                 </p>
                 <p>${video.others.views}</p>
            </div>

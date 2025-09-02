@@ -64,22 +64,22 @@
 //     .catch(err=>console.log(err))
 
 
-const loadData=async()=>{
-    console.log('ami prothom');
-    console.log('ami second');
+// const loadData=async()=>{
+//     console.log('ami prothom');
+//     console.log('ami second');
 
-    const response = await fetch('https://jsonplaceholder.typicode.com/todos/1')
-    const data = await response.json();
+//     const response = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+//     const data = await response.json();
 
-    console.log(data)
+//     console.log(data)
   
-    const result = 10+10;
-    console.log(result);
+//     const result = 10+10;
+//     console.log(result);
 
-    console.log('ami third')
-}
+//     console.log('ami third')
+// }
 
-loadData()
+// loadData()
 
 //   fetch('https://jsonplaceholder.typicode.com/todos/1')
 //         .then(res=>res.json())
@@ -87,7 +87,12 @@ loadData()
 
 
 
+async function fetchData(){
+    const response = await fetch('');
+    const data = await response.json();
+    console.log(data)
 
+}
 
 
 

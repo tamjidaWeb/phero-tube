@@ -108,7 +108,9 @@
 
 // const nums = [1,2,3,4,5,6];
 
-// const newArray =nums.map(value => value+1);
+// const newArray =nums.map(value =>{
+// return value+1;
+// })
 // console.log(newArray)
 
 // const squareArr = nums.map(value=>value*value);
@@ -131,15 +133,54 @@
 // console.log(temp)
 
 
-const word=['huio','jiji'];
-const upWord= word.map(w=>w.toUpperCase());
-console.log(upWord)
+// const word=['huio','jiji'];
+// const upWord= word.map(w=>{
+//     return w;
+// });
+// console.log(upWord)
+
+
+// const nums = [2,3,5,4,6];
+// const newaAr=nums.map(num=>`number=${num}`);
+// console.log(newaAr)
+
+
+const products=[
+    {id:1,color:'gold',name:'iphone',price:120000},
+    {id:2,color:'black',name:'xiaomi',price:20000},
+    {id:3,color:'gold',name:'samsung',price:24000},
+    {id:4,color:'purple',name:'iphone',price:214000},
+]
 
 
 
 
 
 
+
+
+
+// products.forEach(product=>{
+//     if(product.price>24000){
+//         console.log(product)
+//     }
+// })
+
+// const newProduct= products.find(product=>product.id===3);
+// console.log(newProduct)
+
+
+
+// const newProducts = products.filter(product=>product.color=="gold");
+// console.log(newProducts)
+
+// const newProducts = products.filter(product=>product.price>24000);
+// console.log(newProducts)
+// products.forEach(product=>{
+//     if(product.price>24000){
+//         console.log(product.name,product.price)
+//     }
+// });
 
 
 

@@ -114,13 +114,13 @@
 // const squareArr = nums.map(value=>value*value);
 // console.log(squareArr)
 
-const names =[
-    {name:'hiui',job:'teacher'},
-    {name:'miki',job:'non-cadre'}
-]
+// const names =[
+//     {name:'hiui',job:'teacher'},
+//     {name:'miki',job:'non-cadre'}
+// ]
 
-const newAr = names.map(nam=>nam.name)
-console.log(newAr)
+// const newAr = names.map(nam=>nam.name)
+// console.log(newAr)
 
 // let temp =[];
 // for(let i=0;i<nums.length;i++){
@@ -131,6 +131,9 @@ console.log(newAr)
 // console.log(temp)
 
 
+const word=['huio','jiji'];
+const upWord= word.map(w=>w.toUpperCase());
+console.log(upWord)
 
 
 

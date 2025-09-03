@@ -64,27 +64,27 @@
 //     .catch(err=>console.log(err))
 
 
-const loadData=async()=>{
-   try{
-     console.log('ami prothom');
-    console.log('ami second');
+// const loadData=async()=>{
+//    try{
+//      console.log('ami prothom');
+//     console.log('ami second');
 
-    const response = await fetch('https://jsonplaceholder.typicode.com/todos/1')
-    const data = await response.json();
+//     const response = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+//     const data = await response.json();
 
-    console.log(data)
+//     console.log(data)
   
-    const result = 10+10;
-    console.log(result);
+//     const result = 10+10;
+//     console.log(result);
 
-    console.log('ami third')
-   }
-   catch{
-    console.log('error')
-   }
-}
+//     console.log('ami third')
+//    }
+//    catch{
+//     console.log('error')
+//    }
+// }
 
-loadData()
+// loadData()
 
 //   fetch('https://jsonplaceholder.typicode.com/todos/1')
 //         .then(res=>res.json())
@@ -104,5 +104,41 @@ loadData()
     //     const response = await fetch('');
     //     const data = await response.json()
     // }
+
+
+// const nums = [1,2,3,4,5,6];
+
+// const newArray =nums.map(value => value+1);
+// console.log(newArray)
+
+// const squareArr = nums.map(value=>value*value);
+// console.log(squareArr)
+
+const names =[
+    {name:'hiui',job:'teacher'},
+    {name:'miki',job:'non-cadre'}
+]
+
+const newAr = names.map(nam=>nam.name)
+console.log(newAr)
+
+// let temp =[];
+// for(let i=0;i<nums.length;i++){
+//     const num = nums[i];
+//     let sum = num + 1;
+//     temp.push(sum)
+// }
+// console.log(temp)
+
+
+
+
+
+
+
+
+
+
+
 
 

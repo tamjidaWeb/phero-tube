@@ -145,16 +145,23 @@
 // console.log(newaAr)
 
 
-const products=[
-    {id:1,color:'gold',name:'iphone',price:120000},
-    {id:2,color:'black',name:'xiaomi',price:20000},
-    {id:3,color:'gold',name:'samsung',price:24000},
-    {id:4,color:'purple',name:'iphone',price:214000},
-]
+// const products=[
+//     {id:1,color:'gold',name:'iphone',price:120000},
+//     {id:2,color:'black',name:'xiaomi',price:20000},
+//     {id:3,color:'gold',name:'samsung',price:24000},
+//     {id:4,color:'purple',name:'iphone',price:214000},
+// ]
 
+// const newProducts= products.map(p=>{
+//     if(p.name==='iphone'){
+//         p.price = p.price+234;
+//     }
+//     return p;
+// });
+// console.log(newProducts)
 
-
-
+// const age =10;
+// localStorage.setItem('my-age',age)
 
 
 
@@ -182,6 +189,22 @@ const products=[
 //     }
 // });
 
+
+const handleLocalStorage = ()=>{
+  const person = {
+    name:'hero uddin',
+    age:10,
+    friend:['rohim']
+  }
+  const convertedToString = JSON.stringify(person);
+//   const backToObject = JSON.parse(convertedToString);
+// console.log(backToObject.name)
+  localStorage.setItem('alom mia vai',convertedToString);
+}
+
+  const data = localStorage.getItem('alom mia vai');
+  const converted = JSON.parse(data);
+  console.log(converted)
 
 
 

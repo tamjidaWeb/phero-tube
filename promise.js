@@ -190,21 +190,21 @@
 // });
 
 
-const handleLocalStorage = ()=>{
-  const person = {
-    name:'hero uddin',
-    age:10,
-    friend:['rohim']
-  }
-  const convertedToString = JSON.stringify(person);
-//   const backToObject = JSON.parse(convertedToString);
-// console.log(backToObject.name)
-  localStorage.setItem('alom mia vai',convertedToString);
-}
+// const handleLocalStorage = ()=>{
+//   const person = {
+//     name:'hero uddin',
+//     age:10,
+//     friend:['rohim']
+//   }
+//   const convertedToString = JSON.stringify(person);
+// //   const backToObject = JSON.parse(convertedToString);
+// // console.log(backToObject.name)
+//   localStorage.setItem('alom mia vai',convertedToString);
+// }
 
-  const data = localStorage.getItem('alom mia vai');
-  const converted = JSON.parse(data);
-  console.log(converted)
+//   const data = localStorage.getItem('alom mia vai');
+//   const converted = JSON.parse(data);
+//   console.log(converted)
 
 
 
